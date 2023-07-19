@@ -10,7 +10,7 @@ public class Task4 {
         Scanner scan = new Scanner(System.in);
         System.out.print("Введите строку: ");
         String str = scan.nextLine();
-        if (str.equals("") || str.equals(" ")) 
+        if (str.isEmpty()) 
             throw new IllegalArgumentException("Ошибка! Пустые строки вводить нельзя!");
         else System.out.println("Вы ввели: " + str);
         scan.close(); 
